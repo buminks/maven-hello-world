@@ -32,8 +32,8 @@
                 <contextUrl>http://artifactory:8082/artifactory</contextUrl>
                 <username>${artifactoryUser}</username>
                 <password>${artifactoryUserPass}</password>
-                <repoKey>libs-release-local</repoKey>
-                <snapshotRepoKey>libs-snapshot-local</snapshotRepoKey>
+                <repoKey>test-libs-release-local</repoKey>
+                <snapshotRepoKey>test-libs-snapshot-local</snapshotRepoKey>
               </publisher>
             </configuration>
           </execution>
@@ -45,7 +45,7 @@
     <repository>
       <id>bm-releases</id>
       <name>BM Repository</name>
-      <url>http://artifactory:8082/artifactory/libs-release-local</url>
+      <url>http://artifactory:8082/artifactory/test-libs-release-local</url>
       <releases>
         <enabled>true</enabled>
       </releases>
@@ -56,7 +56,7 @@
     <repository>
       <id>bm-snapshots</id>
       <name>BM Repository Snapshots</name>
-      <url>http://artifactory:8082/artifactory/libs-snapshot-local</url>
+      <url>http://artifactory:8082/artifactory/test-libs-snapshot-local</url>
       <releases>
         <enabled>false</enabled>
       </releases>
